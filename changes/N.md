@@ -2,7 +2,7 @@
 
 - Key Attestation
   - Can prove to 3rd partys that a hardware keystore exists with certain keys by signing a representation using a factory supplied key
-  - To ensure that the device is using a secure, official Android factory image, Key Attestation requires that the device bootloader provide the following information to the Trusted Execution Environment (TEE)...
+  - > To ensure that the device is using a secure, official Android factory image, Key Attestation requires that the device bootloader provide the following information to the Trusted Execution Environment (TEE)...
   - [from](http://developer.android.com/preview/api-overview.html#key_attestation) 
 - Network Security Config
   - In Android N, apps can customize the behavior of their secure (HTTPS, TLS) connections safely, without any code modification, by using the declarative Network Security Config instead of using the conventional error-prone programmatic APIs (e.g. X509TrustManager)
