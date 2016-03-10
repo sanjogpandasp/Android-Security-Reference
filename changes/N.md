@@ -1,3 +1,5 @@
+#Sec Change Summary for N Preview
+
 - Key Attestation
   - Can prove to 3rd partys that a hardware keystore exists with certain keys by signing a representation using a factory supplied key
   - To ensure that the device is using a secure, official Android factory image, Key Attestation requires that the device bootloader provide the following information to the Trusted Execution Environment (TEE)...
