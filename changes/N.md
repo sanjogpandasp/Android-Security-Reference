@@ -31,6 +31,6 @@ supplied key
 
 > The reason apps use this provider is to take advantage of its SecureRandom implementation. If your app was relying on setSeed() to derive keys from strings, you must either switch to using SecretKeySpec to load raw key bytes directly, or use a real key derivation function (KDF).
 
-The above is not entirely correct as `Cipher` is backed by the sec provider, i.e. not onlu `SecureRandom`
+The above is not entirely correct as `Cipher` is backed by the sec provider, i.e. not only `SecureRandom`
 
 [from](http://developer.android.com/preview/behavior-changes.html#open-jdk)
