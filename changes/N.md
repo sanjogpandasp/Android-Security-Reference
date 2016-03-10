@@ -11,7 +11,7 @@ supplied key
 
 ##Network Security Config
 
-? In Android N, apps can customize the behavior of their secure (HTTPS, TLS) connections safely, without any code modification, by using the declarative Network Security Config instead of using the conventional error-prone programmatic APIs (e.g. X509TrustManager)
+> In Android N, apps can customize the behavior of their secure (HTTPS, TLS) connections safely, without any code modification, by using the declarative Network Security Config instead of using the conventional error-prone programmatic APIs (e.g. X509TrustManager)
   - Custom trust anchors.
   - Debug-only overrides. 
   - Cleartext traffic opt-out. 
