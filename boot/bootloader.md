@@ -1,13 +1,11 @@
-#Locking
-
 ##Unlocking
 
-Unlock via `fastboot` for devices that allow it.
+Unlock via `fastboot` for devices that allow it. See [Unlocking the bootloader](https://source.android.com/source/running.html#unlocking-the-bootloader).
 
 > In	some	cases,	like	most	devices	built	for	use	on	the	Verizon	network,	the	ability	for	a	user	to	
 unlock	the	bootloader	is	blocked	entirely.	(from [SamDunk][SamDunk])
 
-##Security implications
+##Security implications of unlocking
 
 [Security risks of unlocking](http://android.stackexchange.com/questions/36830/whats-the-security-implication-of-having-an-unlocked-boot-loader)
 
