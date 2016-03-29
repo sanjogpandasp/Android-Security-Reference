@@ -9,7 +9,7 @@ unlock	the	bootloader	is	blocked	entirely.	(from [SamDunk][SamDunk])
 
 ##Security implications
 
-- [Security risks of unlocking](http://android.stackexchange.com/questions/36830/whats-the-security-implication-of-having-an-unlocked-boot-loader)
+[Security risks of unlocking](http://android.stackexchange.com/questions/36830/whats-the-security-implication-of-having-an-unlocked-boot-loader)
 
 ##Checking bootloader lock status
 
