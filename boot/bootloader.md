@@ -5,7 +5,7 @@
 Unlock via `fastboot` for devices that allow it.
 
 > In	some	cases,	like	most	devices	built	for	use	on	the	Verizon	network,	the	ability	for	a	user	to	
-unlock	the	bootloader	is	blocked	entirely.	[SamDunk!][SamDunk]
+unlock	the	bootloader	is	blocked	entirely.	[SamDunk][SamDunk]
 
 ##Security implications
 
@@ -15,7 +15,7 @@ unlock	the	bootloader	is	blocked	entirely.	[SamDunk!][SamDunk]
 
 AFAIK there is no single and/or public apis/methods to check the bootloader lock status. OEMs have different private approaches for doing this. 
 
-See [SamDunk!][SamDunk] for some mention of this and a related Samsung vuln.
+See [SamDunk][SamDunk] for some mention of this and a related Samsung vuln.
 
 > Manufacturers	employ	a	wide	variety	of	methods	and	mechanisms	to	determine	and	control	a
 device’s	bootloader	lock	status.		Motorola	uses	TrustZone	protected	fuses,	HTC	uses	data	in	a	
