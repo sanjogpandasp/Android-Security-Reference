@@ -5,7 +5,7 @@
 Unlock via `fastboot` for devices that allow it.
 
 > In	some	cases,	like	most	devices	built	for	use	on	the	Verizon	network,	the	ability	for	a	user	to	
-unlock	the	bootloader	is	blocked	entirely.	[SamDunk][SamDunk]
+unlock	the	bootloader	is	blocked	entirely.	(from [SamDunk][SamDunk])
 
 ##Security implications
 
