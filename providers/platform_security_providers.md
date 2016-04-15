@@ -40,9 +40,9 @@ Security functionality on Android is provided by various open src libs which var
 - Many people import this so can use latest BC. 
 - If going to use best not to make default but still set staically so can use with direct sepcifier throughout app
 
-###None
+###None?
 
-- N has removed all JCE security providers! See ...
+- N has removed all JCE security providers! See the [N changes doc](https://github.com/doridori/Android-Security-Reference/blob/master/changes/N.md)
 
 
 
