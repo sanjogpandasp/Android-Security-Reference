@@ -16,16 +16,22 @@ Security functionality on Android is provided by various open src libs which var
 - AndroidOpenSSL covers most of BouncyCastles functionality in 4.4
 - AndroidOpenSSL since 4.4 has been pulled out of core and can be used as a standalone lib (conscrypt)
  
-##BouncyCastle
+##Java JCE Providers
+
+###BouncyCastle
 
 - Android used an old version of BC ("[crippled]")
 - Was the default security Java Security API provider
 - Package was renamed at 3.0. Before this issues if including a newer version of BC (hence [SC](https://rtyley.github.io/spongycastle/))
 
-##SpongyCastle
+###SpongyCastle
 
 - Many people import this so can use latest BC. 
 - If going to use best not to make default but still set staically so can use with direct sepcifier throughout app
+
+###None
+
+- N has removed all JCE security providers! See ...
 
 ##Harmony
 		
@@ -35,5 +41,6 @@ Security functionality on Android is provided by various open src libs which var
 		
 - Google patched fork of openSSL
 - Transition starting in 6.0
+
 
 
