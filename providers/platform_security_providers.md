@@ -4,18 +4,29 @@ _The below could be completly wrong, please correct if any mistakes noticed_
 
 Security functionality on Android is provided by various open src libs which vary depending on the OS version.
 
-##OpenSSL
+##Native Implementations
+
+###OpenSSL
 
 - OpenSSL version used - look in AOSP openSSL version file for each platform tag 4.3 used 1.0.1e
 - OpenSSL introduced in 4.2?
 
-##AndroidOpenSSL
+###AndroidOpenSSL
 
 - AndroidOpenSSL highest priority since 4.4
 - AndroidOpenSSL was introduced in 4
 - AndroidOpenSSL covers most of BouncyCastles functionality in 4.4
 - AndroidOpenSSL since 4.4 has been pulled out of core and can be used as a standalone lib (conscrypt)
  
+###Harmony
+		
+- Old and being phased out
+	
+###BoringSSL
+		
+- Google patched fork of openSSL
+- Transition starting in 6.0
+
 ##Java JCE Providers
 
 ###BouncyCastle
@@ -32,15 +43,6 @@ Security functionality on Android is provided by various open src libs which var
 ###None
 
 - N has removed all JCE security providers! See ...
-
-##Harmony
-		
-- Old and being phased out
-	
-##BoringSSL
-		
-- Google patched fork of openSSL
-- Transition starting in 6.0
 
 
 
