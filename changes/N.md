@@ -33,4 +33,4 @@ supplied key
 
 The above is not entirely correct as `Cipher` is backed by the sec provider, i.e. not only `SecureRandom`
 
-[from](http://developer.android.com/preview/behavior-changes.html#open-jdk)
+This was originally copied from [the N release notes](http://developer.android.com/preview/behavior-changes.html#open-jdk) but has since been removed. It was found under the heading _Platform Migration toward OpenJDK 8_.
