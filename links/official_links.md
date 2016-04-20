@@ -12,4 +12,4 @@
 
 ##Security Research
 
-- [Project Zero](https://en.wikipedia.org/wiki/Project_Zero_(Google))
+- [Project Zero blog](http://googleprojectzero.blogspot.co.uk/)
