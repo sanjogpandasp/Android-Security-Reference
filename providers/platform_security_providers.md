@@ -12,7 +12,7 @@ Security functionality on Android is provided by various open src libs which var
 ####BoringSSL
 
 - [Source link](https://boringssl.googlesource.com/boringssl/)		
-- Google patched fork of openSSL
+- "BoringSSL is a fork of OpenSSL that is designed to meet Google’s needs."
 - Transition starting in 6.0
 
 ##Java JCE Providers
