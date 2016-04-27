@@ -4,24 +4,24 @@ Security functionality on Android is provided by various open src libs which var
 
 ##Native Implementations
 
-###OpenSSL
+####OpenSSL
 
 - Used since the beginning?
 - OpenSSL version used - look in AOSP openSSL version file for each platform tag 4.3 used 1.0.1e
 	
-###BoringSSL
+####BoringSSL
 		
 - Google patched fork of openSSL
 - Transition starting in 6.0
 
 ##Java JCE Providers
 
-###Apache Harmonys Crypto Provider
+####Apache Harmonys Crypto Provider
 		
 - Old and being phased out
 - Limited JCE functionality
 
-###AndroidOpenSSL
+####AndroidOpenSSL
 
 - Introduced in 4 (SSL function only)
 - Highest priority since 4.4
@@ -29,19 +29,19 @@ Security functionality on Android is provided by various open src libs which var
 - Since 4.4 has been pulled out of core and can be used as a standalone lib (conscrypt)
 - Backed by OpenSSL natively
 
-###BouncyCastle
+####BouncyCastle
 
 - Android used an old version of BC ("[crippled]")
 - Was the default security Java Security API provider
 - Package was renamed at 3.0. Before this issues if including a newer version of BC (hence [SC](https://rtyley.github.io/spongycastle/))
 - Offered full JCE functionality
 
-###SpongyCastle
+####SpongyCastle
 
 - Many people import this so can use latest BC. 
 - If going to use best not to make default but still set staically so can use with direct sepcifier throughout app
 
-###None?
+####None?
 
 - N has removed all JCE security providers! See the [N changes doc](https://github.com/doridori/Android-Security-Reference/blob/master/changes/N.md)
 
