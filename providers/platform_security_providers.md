@@ -27,7 +27,8 @@ Security functionality on Android is provided by various open src libs which var
 - Highest priority since 4.4
 - Covers most of the same function as BC since 4.4
 - Since 4.4 has been pulled out of core and can be used as a standalone lib (conscrypt)
-- Backed by OpenSSL natively
+- Backed by OpenSSL ( BoringSSL >= 6 ) natively
+- [Source](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLProvider.java) @ N preview v2
 
 ####BouncyCastle
 
