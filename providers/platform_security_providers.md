@@ -2,6 +2,8 @@
 
 Security functionality on Android is provided by various open src libs which vary depending on the OS version. There are native libs and java libs with JCE interfaces which coexist. 
 
+Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technetwork/java/javase/tech/index-jsp-136007.html).
+
 ##Native Implementations
 
 ####OpenSSL
