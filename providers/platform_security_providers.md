@@ -10,7 +10,8 @@ Security functionality on Android is provided by various open src libs which var
 - OpenSSL version used - look in AOSP openSSL version file for each platform tag 4.3 used 1.0.1e
 	
 ####BoringSSL
-		
+
+- [Source link](https://boringssl.googlesource.com/boringssl/)		
 - Google patched fork of openSSL
 - Transition starting in 6.0
 
