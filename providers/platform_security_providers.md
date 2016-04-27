@@ -45,7 +45,7 @@ Security functionality on Android is provided by various open src libs which var
 
 ####None?
 
-- N has removed all JCE security providers! See the [N changes doc](https://github.com/doridori/Android-Security-Reference/blob/master/changes/N.md)
+- ~~N has removed all JCE security providers! See the [N changes doc](https://github.com/doridori/Android-Security-Reference/blob/master/changes/N.md)~~ As mentioned in the link this information was removed after the annoucement!
 
 ##Updating
 
