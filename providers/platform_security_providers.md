@@ -52,7 +52,7 @@ Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technet
 
 - ~~N has removed all JCE security providers! See the [N changes doc](https://github.com/doridori/Android-Security-Reference/blob/master/changes/N.md)~~ As mentioned in the link this information was removed after the annoucement!
 
-##Updating
+##Updating platform Provider from your app
 
 See (Updating Your Security Provider to Protect Against SSL Exploits)[http://developer.android.com/training/articles/security-gms-provider.html]. Not clear if updates `BoringSSL` or just the Java `AndroidOpenSSL` SPI (or both). 
 
