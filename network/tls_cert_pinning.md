@@ -1,4 +1,4 @@
-#SSL Cert Pinning
+#TLS Cert Pinning
 
 There are various approaches to cert pinning on android. What they all have in common is that they validate the cert chain in use by looking for compile time known certs. Below is a TLDR of a simple approach as spoken about in the below links.
 
