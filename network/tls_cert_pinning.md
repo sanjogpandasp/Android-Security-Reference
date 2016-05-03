@@ -20,7 +20,9 @@ Can pin via xml as shown [here](http://developer.android.com/preview/features/se
   - Has Android examples
 - [moxie0/AndroidPinning](https://github.com/moxie0/AndroidPinning)
   - Has manual inclusion of system TrustManager 
+- [Okhttp pinning discussion](https://github.com/square/okhttp/issues/173) 
+- [iSECPartners/android-ssl-bypass](https://github.com/iSECPartners/android-ssl-bypass)
 
 #Random Notes
 
-- When creating a `TrustManagerFactory` pass in null to get system `TrustManager` also
+- When creating a `TrustManagerFactory` pass in null to get system `TrustManager`. Can pin while extending system TrustManager. 
