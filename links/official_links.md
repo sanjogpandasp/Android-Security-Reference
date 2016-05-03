@@ -1,5 +1,9 @@
 #Offical Google Security Links
 
+##Dev Docs
+
+- [Best Practices for Security & Privacy](http://developer.android.com/training/best-security.html)
+
 ##Compatability Docs
 
 - [6.0 Compatability Doc](http://static.googleusercontent.com/media/source.android.com/en//compatibility/android-cdd.pdf)
