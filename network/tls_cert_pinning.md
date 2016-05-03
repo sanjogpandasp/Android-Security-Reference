@@ -20,3 +20,7 @@ Can pin via xml as shown [here](http://developer.android.com/preview/features/se
   - Has Android examples
 - [moxie0/AndroidPinning](https://github.com/moxie0/AndroidPinning)
   - Has manual inclusion of system TrustManager 
+
+#Random Notes
+
+- When creating a `TrustManagerFactory` pass in null to get system `TrustManager` also
