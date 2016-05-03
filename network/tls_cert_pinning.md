@@ -17,5 +17,6 @@ Can pin via xml as shown [here](http://developer.android.com/preview/features/se
 - [rfc7469 `Public Key Pinning Extension for HTTP`](https://tools.ietf.org/html/rfc7469) (HPKP TOFU pin)
 - [rfc5280 Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://tools.ietf.org/html/rfc5280)
 - [OWASP Public Key Pinning](https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning)
+  - Has Android examples
 - [moxie0/AndroidPinning](https://github.com/moxie0/AndroidPinning)
   - Has manual inclusion of system TrustManager 
