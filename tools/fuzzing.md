@@ -1,2 +1,1 @@
-- [Nogotofail](https://github.com/google/nogotofail) 
-  - Nogotofail is a network security testing tool designed to help developers and security researchers spot and fix weak TLS/SSL connections and sensitive cleartext traffic on devices and applications in a flexible, scalable, powerful way. 
+
