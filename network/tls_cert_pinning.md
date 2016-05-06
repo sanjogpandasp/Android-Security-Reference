@@ -5,7 +5,7 @@ There are various approaches to cert pinning on android. What they all have in c
 - Depending on the approach these can be Root, Intermediary, or Leaf (or a combo of the above) depending on requirements. 
 - Pin the SHA256 of Subject Public Key Info ([SPKI](https://tools.ietf.org/html/rfc5280#section-4.1.2.7))
 - "...developers should not check pins against the list of certificates sent by the server. Instead, pins should be checked against the new, 'clean' chain that is created during SSL validation.". See Blog Posts below.
-- Easiest by far is to use Okhttp's `CertificatePinner` which accounts for `cleaning the chain`
+- Easiest by far is to use Okhttp's `CertificatePinner` which accounts for "cleaning the chain"
 
 #N Additions
 
