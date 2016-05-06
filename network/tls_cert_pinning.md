@@ -12,16 +12,20 @@ Can pin via xml as shown [here](http://developer.android.com/preview/features/se
 
 #Links
 
-- [Paypal Engineering - Key Pinning in Mobile Applications](https://www.paypal-engineering.com/2015/10/14/key-pinning-in-mobile-applications/)
-- [Testing for CVE-2016-2402 and similar pinning issues](https://koz.io/pinning-cve-2016-2402/)
-- [rfc7469 `Public Key Pinning Extension for HTTP`](https://tools.ietf.org/html/rfc7469) (HPKP TOFU pin)
-- [rfc5280 Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://tools.ietf.org/html/rfc5280)
-- [OWASP Public Key Pinning](https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning)
-  - Has Android examples
-- [moxie0/AndroidPinning](https://github.com/moxie0/AndroidPinning)
-  - Has manual inclusion of system TrustManager 
-- [Okhttp pinning discussion](https://github.com/square/okhttp/issues/173) 
-- [iSECPartners/android-ssl-bypass](https://github.com/iSECPartners/android-ssl-bypass)
+- Blog posts
+  - [Paypal Engineering - Key Pinning in Mobile Applications](https://www.paypal-engineering.com/2015/10/14/key-pinning-in-mobile-applications/)
+  - [Testing for CVE-2016-2402 and similar pinning issues](https://koz.io/pinning-cve-2016-2402/)
+  - [Okhttp pinning discussion](https://github.com/square/okhttp/issues/173) 
+- RFCs
+  - [rfc7469 `Public Key Pinning Extension for HTTP`](https://tools.ietf.org/html/rfc7469) (HPKP TOFU pin)
+  - [rfc5280 Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://tools.ietf.org/html/rfc5280)
+- Guides  
+  - [OWASP Public Key Pinning](https://www.owasp.org/index.php/Certificate_and_Public_Key_Pinning)
+    - Has Android examples
+- OpenSrc 
+  - [moxie0/AndroidPinning](https://github.com/moxie0/AndroidPinning)
+    - Has manual inclusion of system TrustManager 
+  - [iSECPartners/android-ssl-bypass](https://github.com/iSECPartners/android-ssl-bypass)
 
 #Random Notes
 
