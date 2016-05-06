@@ -15,6 +15,7 @@ Can pin via xml as shown [here](http://developer.android.com/preview/features/se
 - Blog posts
   - [Paypal Engineering - Key Pinning in Mobile Applications](https://www.paypal-engineering.com/2015/10/14/key-pinning-in-mobile-applications/)
   - [Testing for CVE-2016-2402 and similar pinning issues](https://koz.io/pinning-cve-2016-2402/)
+    - Talks about [An Examination of Ineffective Certificate Pinning Implementations](https://www.cigital.com/blog/ineffective-certificate-pinning-implementations/) 
   - [Okhttp pinning discussion](https://github.com/square/okhttp/issues/173) 
 - RFCs
   - [rfc7469 `Public Key Pinning Extension for HTTP`](https://tools.ietf.org/html/rfc7469) (HPKP TOFU pin)
