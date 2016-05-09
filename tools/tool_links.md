@@ -1,4 +1,4 @@
-#Pen Testing
+#Pen Testing Frameworks / Collections
 
 - [ajinabraham/Mobile-Security-Framework-MobSF](https://github.com/ajinabraham/Mobile-Security-Framework-MobSF)
 - [Drozer](https://labs.mwrinfosecurity.com/tools/drozer/)
@@ -10,6 +10,10 @@
 
 - [Nogotofail](https://github.com/google/nogotofail) 
   - Nogotofail is a network security testing tool designed to help developers and security researchers spot and fix weak TLS/SSL connections and sensitive cleartext traffic on devices and applications in a flexible, scalable, powerful way. 
+
+#MemDump
+
+- [Introduction to Fridump](http://pentestcorner.com/introduction-to-fridump/)
 
 #File System Analysis
 
