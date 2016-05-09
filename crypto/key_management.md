@@ -1,6 +1,6 @@
 #Overview to AOSP api components
 
-Below there is info on the `KeyStore`
+Below there is info on the [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html)
 
 > KeyStore is responsible for maintaining cryptographic keys and their owners.
 
@@ -8,7 +8,7 @@ and the `KeyChain`
 
 > Use the KeyChain API when you want system-wide credentials. When an app requests the use of any credential through the KeyChain API, users get to choose, through a system-provided UI, which of the installed credentials an app can access. This allows several apps to use the same set of credentials with user consent.
 
-#KeyStore
+#[KeyStore](http://developer.android.com/reference/java/security/KeyStore.html)
 
 ##Version changes
 
