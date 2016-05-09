@@ -11,8 +11,9 @@ and the `KeyChain`
 #KeyStore
 
 ##Version changes
-- 1.6+
-  -Keystore implemented as a native keystore daemon that used a local socket as its IPC interface
+
+- 1.6
+  - Keystore implemented as a native keystore daemon that used a local socket as its IPC interface
 - 4.3
   - [Credential storage enhancements in Android 4.3](http://nelenkov.blogspot.co.uk/2013/08/credential-storage-enhancements-android-43.html)
   - can store public / private keys
