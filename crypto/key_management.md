@@ -10,6 +10,10 @@ and the `KeyChain`
 
 #[KeyStore](http://developer.android.com/reference/java/security/KeyStore.html)
 
+##Losing Keys
+
+See [Android Security: The Forgetful Keystore](http://doridori.github.io/android-security-the-forgetful-keystore/)
+
 ##Version changes
 
 - 1.6
