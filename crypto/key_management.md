@@ -23,7 +23,7 @@ and the `KeyChain`
     - can store directly via hidden apis - see link above
     - Can with [`Vault`](https://android.googlesource.com/platform/development/+/master/samples/Vault/src/com/example/android/vault/SecretKeyWrapper.java) wrapper class
       - check out [g+ post](https://plus.google.com/+JeffSharkey/posts/9BmGb3xbPcA)
-  - [android release notes](http://developer.android.com/about/versions/android-4.3.html#Security)
+  - [Android 4.3 release notes](http://developer.android.com/about/versions/android-4.3.html#Security)
   - deamon retired and replaced with binder interface
 - 4.4
   - support for elliptic curve
