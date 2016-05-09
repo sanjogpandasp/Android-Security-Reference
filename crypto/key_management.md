@@ -10,24 +10,23 @@ and the `KeyChain`
 
 #KeyStore
 
-version changes
-	1.6+
-		Keystore implemented as a native keystore daemon that used a local socket as its IPC interface
-	4.3
-		Credential storage enhancements in Android 4.3
-			example of how to create local key pair
-		can store public / private keys
-		can have multiple device users
-			before 4.3 only PRIMARY user could use
-		CANT store AES keys
-			but could encypt the AES key with created public / private key and in keystore
-			can store directly via hidden apis - see link above
-			Can with VAULT wrapper class
-				check out g+ post
-		android release notes
-		deamon retired and replaced with binder interface
-	4.4
-		support for elliptic curve
+##Version changes
+- 1.6+
+  -Keystore implemented as a native keystore daemon that used a local socket as its IPC interface
+- 4.3
+  - [Credential storage enhancements in Android 4.3](http://nelenkov.blogspot.co.uk/2013/08/credential-storage-enhancements-android-43.html)
+  - can store public / private keys
+  - can have multiple device users
+    - before 4.3 only PRIMARY user could use
+  - CANT store AES keys
+    - but could encypt the AES key with created public / private key and in keystore
+    - can store directly via hidden apis - see link above
+    - Can with [`Vault`](https://android.googlesource.com/platform/development/+/master/samples/Vault/src/com/example/android/vault/SecretKeyWrapper.java) wrapper class
+      - check out [g+ post](https://plus.google.com/+JeffSharkey/posts/9BmGb3xbPcA)
+  - [android release notes](http://developer.android.com/about/versions/android-4.3.html#Security)
+  - deamon retired and replaced with binder interface
+- 4.4
+  - support for elliptic curve
 
 #KeyChain
 
