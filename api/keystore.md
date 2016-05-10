@@ -12,7 +12,7 @@ See [developer.android.com] [Android Keystore System](http://developer.android.c
   - Keystore implemented as a native keystore daemon that used a local socket as its IPC interface
 - J-4.3-18
   - [Credential storage enhancements in Android 4.3](http://nelenkov.blogspot.co.uk/2013/08/credential-storage-enhancements-android-43.html)
-  - can store public / private keys via RSA/*/* `Cipher` support
+  - can store public / private keys via RSA `Cipher` support
   - `Signiture` support for RSA varients
   - can have multiple device users
     - before 4.3 only PRIMARY user could use
@@ -27,7 +27,7 @@ See [developer.android.com] [Android Keystore System](http://developer.android.c
   - Support for elliptic curve
   - `Signiture` support for ECDSA varients
 - M-6-23
-  - First time for AES/*/* `Cipher` support (See ['Supported Algorithms'](http://developer.android.com/training/articles/keystore.html#SupportedAlgorithms)) 
+  - First time for AES `Cipher` support (See ['Supported Algorithms'](http://developer.android.com/training/articles/keystore.html#SupportedAlgorithms)) 
   - `KeyGenerator` support for AES & HMAC
   - `KeyFactory` & `KeyPairGenerator` support for EC & RSA
   - `Mac` Hmac support
