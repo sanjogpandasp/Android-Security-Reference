@@ -76,7 +76,7 @@ If a key has been created with `.setUserAuthenticationRequired(true)` then the u
 
 See [Android Security: The Forgetful Keystore](http://doridori.github.io/android-security-the-forgetful-keystore/) for losing Keys due to lock screen changes.
 
-You can also lose Keys that require fingerprint auth when a new finger is enrolled. See [fingerprint.md](/fingerprint.md)
+You can also lose Keys that require fingerprint auth when a new finger is enrolled. See [fingerprint.md](/api/fingerprint.md)
 
 ##Locking of Keystore
 
