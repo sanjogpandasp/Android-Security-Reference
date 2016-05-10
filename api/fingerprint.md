@@ -20,6 +20,8 @@ Added in M-6-23, AOSP now officially supports fingerprint hardware with an API a
     - Crypto keys should be valid during lifecycle of succesful callback
 - `USER_FINGERPRINT` permission needed
 	- [`normal`](http://developer.android.com/reference/android/Manifest.permission.html#USE_FINGERPRINT) level permission, therefore no need to request at runtime
+- [`KeyGenParameterSpec.Builder.setUserAuthenticationRequired(boolean)`](http://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setUserAuthenticationRequired(boolean))
+	- ...if the key requires that user authentication takes place for every use of the key (see `setUserAuthenticationValidityDurationSeconds(int)`), at least one fingerprint must be enrolled (see `hasEnrolledFingerprints()`)
 
 ##`KeyStore` keys requiring auth
 
