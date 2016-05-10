@@ -10,18 +10,6 @@ and the `KeyChain`
 
 #[KeyStore](http://developer.android.com/reference/java/security/KeyStore.html)
 
-##Authenticating Key Use
-
-- [ConfirmCredential](http://developer.android.com/samples/ConfirmCredential/index.html)
-    - This sample demonstrates how you can use device credentials (PIN, Pattern, Password) in your app to authenticate the user before they are trying to complete some actions
-    - Will try to use key as part of crypto op after auth
-- Auth Via Fingerprint
-  - check [fingerprint.md](fingerprint.md) for more 
-
-##Losing Keys
-
-See [Android Security: The Forgetful Keystore](http://doridori.github.io/android-security-the-forgetful-keystore/)
-
 ##Version changes
 
 - 1.6
@@ -49,6 +37,18 @@ See [Android Security: The Forgetful Keystore](http://doridori.github.io/android
 - N (7?)
   - Key Attestion
     - Can prove to 3rd partys that a hardware keystore exists with certain keys by signing a representation using a factory supplied key 
+
+##Authenticating Key Use
+
+- [ConfirmCredential](http://developer.android.com/samples/ConfirmCredential/index.html)
+    - This sample demonstrates how you can use device credentials (PIN, Pattern, Password) in your app to authenticate the user before they are trying to complete some actions
+    - Will try to use key as part of crypto op after auth
+- Auth Via Fingerprint
+  - check [fingerprint.md](fingerprint.md) for more 
+
+##Losing Keys
+
+See [Android Security: The Forgetful Keystore](http://doridori.github.io/android-security-the-forgetful-keystore/)
 
 #KeyChain
 
