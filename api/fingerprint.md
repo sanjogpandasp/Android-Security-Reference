@@ -14,7 +14,7 @@ Losing Keys after new finger enrollment
 
 >The key will become irreversibly invalidated once the secure lock screen is disabled (reconfigured to None, Swipe or other mode which does not authenticate the user) or when the secure lock screen is forcibly reset (e.g., by a Device Administrator). Additionally, if the key requires that user authentication takes place for every use of the key, it is also irreversibly invalidated once a new fingerprint is enrolled or once\ no more fingerprints are enrolled. Attempts to initialize cryptographic operations using such keys will throw `KeyPermanentlyInvalidatedException`.
 
-Taken from [`setUserAuthenticationRequired()`](http://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setUserAuthenticationRequired(boolean)).
+Taken from [`setUserAuthenticationRequired()`](http://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setUserAuthenticationRequired(boolean)). More info about Key creation can be found in [keystore.md](/api/keystore.md).
 
 ##API
 
