@@ -10,6 +10,15 @@ is fingerprint authentication: FingerprintManager.authenticate. Such keys can on
 fingerprint is enrolled (see FingerprintManager.hasEnrolledFingerprints). These keys become permanently invalidated once a 
 new fingerprint is enrolled or all fingerprints are unenrolled.
 
+##API
+
+- Official Examples
+  - [ConfirmCredential]
+    - [This sample demonstrates how you can use device credentials (PIN, Pattern, Password) in your app to authenticate the user before they are trying to complete some actions] 
+  - [FingerPrintDialog](http://developer.android.com/samples/FingerprintDialog/src/com.example.android.fingerprintdialog/MainActivity.html) 
+    - This sample demonstrates how you can use registered fingerprints to authenticate the user before proceeding some actions such as purchasing an item.
+    - Will try to use key as part of crypto op after auth
+
 ##AOSP CTS Requirements
 
 To have google apps & services OEM devices must pass the CTS. This should mean that existing 3rd party fingerprint implementations will need to conform to the M api for fingerprint if they are to be upgraded to run M. _(confirmation needed)_.
