@@ -37,6 +37,9 @@ See [Android Security: The Forgetful Keystore](http://doridori.github.io/android
   - [`KeyProtection`](http://developer.android.com/reference/android/security/keystore/KeyProtection.html)
     - Specification of how a key or key pair is secured when imported into the Android Keystore system.
   - `KeyStore` keys can require fingerprint auth before use 
+- N (7?)
+  - Key Attestion
+    - Can prove to 3rd partys that a hardware keystore exists with certain keys by signing a representation using a factory supplied key 
 
 #KeyChain
 
