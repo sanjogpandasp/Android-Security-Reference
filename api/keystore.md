@@ -8,9 +8,9 @@ See [developer.android.com] [Android Keystore System](http://developer.android.c
 
 ##Version changes
 
-- D-1.6-4
+- **D-1.6-4**
   - Keystore implemented as a native keystore daemon that used a local socket as its IPC interface
-- J-4.3-18
+- **J-4.3-18**
   - [Credential storage enhancements in Android 4.3](http://nelenkov.blogspot.co.uk/2013/08/credential-storage-enhancements-android-43.html)
   - can store public / private keys via RSA `Cipher` support
   - `Signiture` support for RSA varients
@@ -23,10 +23,10 @@ See [developer.android.com] [Android Keystore System](http://developer.android.c
       - check out [g+ post](https://plus.google.com/+JeffSharkey/posts/9BmGb3xbPcA)
   - [Android 4.3 release notes](http://developer.android.com/about/versions/android-4.3.html#Security)
   - deamon retired and replaced with binder interface
-- K-4.4-19
+- **K-4.4-19**
   - Support for elliptic curve
   - `Signiture` support for ECDSA varients
-- M-6-23
+- **M-6-23**
   - First time for AES `Cipher` support (See ['Supported Algorithms'](http://developer.android.com/training/articles/keystore.html#SupportedAlgorithms)) 
   - `KeyGenerator` support for AES & HMAC
   - `KeyFactory` & `KeyPairGenerator` support for EC & RSA
@@ -38,7 +38,7 @@ See [developer.android.com] [Android Keystore System](http://developer.android.c
     - Specification of how a key or key pair is secured when imported into the Android Keystore system.
   - `KeyStore` keys can require fingerprint auth before use 
     - "User authentication authorizes a specific cryptographic operation associated with one key. In this mode, each operation involving such a key must be individually authorized by the user". See `api/finger` for more.
-- N-7?-24?
+- **N-7?-24?**
   - Key Attestion
     - Can prove to 3rd partys that a hardware keystore exists with certain keys by signing a representation using a factory supplied key 
 
