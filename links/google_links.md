@@ -2,7 +2,8 @@
 
 ##Dev Docs
 
-- [Best Practices for Security & Privacy](http://developer.android.com/training/best-security.html)
+- [developer.android.com] [Best Practices for Security & Privacy](http://developer.android.com/training/best-security.html)
+- [source.android.com] [Security](https://source.android.com/security/index.html)
 
 ##Compatability Docs
 
