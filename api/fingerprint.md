@@ -12,7 +12,7 @@ new fingerprint is enrolled or all fingerprints are unenrolled.
 
 ##AOSP CTS Requirements
 
-To have google apps & services OEM devices must pass the CTS. This should mean that existing 3rd party fingerprint implementations will need to conform to the M api for fingerprint if they are to be upgraded to run M. (_confirmation needed_).
+To have google apps & services OEM devices must pass the CTS. This should mean that existing 3rd party fingerprint implementations will need to conform to the M api for fingerprint if they are to be upgraded to run M. _(confirmation needed)_.
 
 [M-6-23 Compatability Doc](http://static.googleusercontent.com/media/source.android.com/en//compatibility/android-cdd.pdf)
 
