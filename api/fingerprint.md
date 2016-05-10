@@ -10,6 +10,16 @@ is fingerprint authentication: FingerprintManager.authenticate. Such keys can on
 fingerprint is enrolled (see FingerprintManager.hasEnrolledFingerprints). These keys become permanently invalidated once a 
 new fingerprint is enrolled or all fingerprints are unenrolled.
 
+##AOSP CTS Requirements
+
+To have google apps & services OEM devices must pass the CTS. This should mean that existing 3rd party fingerprint implementations will need to conform to the M api for fingerprint if they are to be upgraded to run M. (_confirmation needed_).
+
+[M-6-23 Compatability Doc](http://static.googleusercontent.com/media/source.android.com/en//compatibility/android-cdd.pdf)
+
+> MUST have a hardware-backed keystore implementation, and perform the fingerprint matching in a Trusted Execution Environment (TEE) or on a chip with a secure channel to the TEE.
+
+> MUST have a false acceptance rate not higher than 0.002%.
+
 ##Risk of using Biometric?
 
 There are a few articles saying using biometric is very risky as if you lose your fingerprint data you cant change your 
