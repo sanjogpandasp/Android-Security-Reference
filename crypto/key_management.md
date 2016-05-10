@@ -33,7 +33,8 @@ See [Android Security: The Forgetful Keystore](http://doridori.github.io/android
 - 4.4
   - support for elliptic curve
 - 6.0
-  - "Keys which do not require encryption at rest will no longer be deleted when secure lock screen is disabled or reset (for example, by the user or a Device Administrator). Keys which require encryption at rest will be deleted during these events. 
+  - "Keys which do not require encryption at rest will no longer be deleted when secure lock screen is disabled or reset (for example, by the user or a Device Administrator). Keys which require encryption at rest will be deleted during these events. - [`KeyProtection`](http://developer.android.com/reference/android/security/keystore/KeyProtection.html)
+    - Specification of how a key or key pair is secured when imported into the Android Keystore system.
 
 #KeyChain
 
