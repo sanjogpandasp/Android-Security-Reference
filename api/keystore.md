@@ -1,8 +1,6 @@
-Below there is info on the [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html)
+#[KeyStore](http://developer.android.com/reference/java/security/KeyStore.html)
 
 > KeyStore is responsible for maintaining cryptographic keys and their owners.
-
-#[KeyStore](http://developer.android.com/reference/java/security/KeyStore.html)
 
 ##Version changes
 
