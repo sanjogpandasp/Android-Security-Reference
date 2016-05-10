@@ -24,4 +24,4 @@
 
 ##Security Blog Posts
 
-- [Hardening the media stack](http://android-developers.blogspot.co.uk/2016/05/hardening-media-stack.html) 5th May 16
+- [android-developers.blogspot.co.uk] [Hardening the media stack](http://android-developers.blogspot.co.uk/2016/05/hardening-media-stack.html) 5th May 16
