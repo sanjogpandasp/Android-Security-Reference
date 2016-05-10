@@ -13,7 +13,7 @@ new fingerprint is enrolled or all fingerprints are unenrolled.
 ##API
 
 - Official Examples
-  - [ConfirmCredential]
+  - [ConfirmCredential](http://developer.android.com/samples/ConfirmCredential/index.html)
     - [This sample demonstrates how you can use device credentials (PIN, Pattern, Password) in your app to authenticate the user before they are trying to complete some actions] 
   - [FingerPrintDialog](http://developer.android.com/samples/FingerprintDialog/src/com.example.android.fingerprintdialog/MainActivity.html) 
     - This sample demonstrates how you can use registered fingerprints to authenticate the user before proceeding some actions such as purchasing an item.
