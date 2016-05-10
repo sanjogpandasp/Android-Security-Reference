@@ -49,7 +49,7 @@ and
 	  - If using the `KeyStore` without any additional settings just unlocking the device should unlock the `KeyStore` 
 	- [`.setEncryptionRequired()`](http://developer.android.com/reference/android/security/KeyPairGeneratorSpec.Builder.html#setEncryptionRequired())  
 	  - Requires a lock screen is set 
-	- `.setUserAuthenticationRequired(true)` 
+	- `KeyGenParameterSpec.Builder.setUserAuthenticationRequired(true)` 
 	   - User has to autheticate each use of the key (see below for more)	   
 	   - Optional `.setUserAuthenticationValidityDurationSeconds(AUTHENTICATION_DURATION_SECONDS)`
 	     - Previous key validations are valid for this amount of time 
@@ -74,7 +74,9 @@ If a key has been created with `.setUserAuthenticationRequired(true)` then the u
 
 ##Losing Keys and how to handle
 
-See [Android Security: The Forgetful Keystore](http://doridori.github.io/android-security-the-forgetful-keystore/)
+See [Android Security: The Forgetful Keystore](http://doridori.github.io/android-security-the-forgetful-keystore/) for losing Keys due to lock screen changes.
+
+You can also lose Keys that require fingerprint auth when a new finger is enrolled. See [fingerprint.md](/fingerprint.md)
 
 ##Locking of Keystore
 
