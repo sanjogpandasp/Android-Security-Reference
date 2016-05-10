@@ -37,6 +37,7 @@ See [Android Security: The Forgetful Keystore](http://doridori.github.io/android
   - [`KeyProtection`](http://developer.android.com/reference/android/security/keystore/KeyProtection.html)
     - Specification of how a key or key pair is secured when imported into the Android Keystore system.
   - `KeyStore` keys can require fingerprint auth before use 
+    - "User authentication authorizes a specific cryptographic operation associated with one key. In this mode, each operation involving such a key must be individually authorized by the user. Currently, the only means of such authorization is fingerprint authentication: FingerprintManager.authenticate. Such keys can only be generated or imported if at least one fingerprint is enrolled (see FingerprintManager.hasEnrolledFingerprints). These keys become permanently invalidated once a new fingerprint is enrolled or all fingerprints are unenrolled.". See `api/finger` for more.
 - N (7?)
   - Key Attestion
     - Can prove to 3rd partys that a hardware keystore exists with certain keys by signing a representation using a factory supplied key 
