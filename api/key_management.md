@@ -50,6 +50,10 @@ and the `KeyChain`
 
 See [Android Security: The Forgetful Keystore](http://doridori.github.io/android-security-the-forgetful-keystore/)
 
+##Links
+
+- - [Nikolay Elenkov] [Keystore redesign in Android M](https://nelenkov.blogspot.co.uk/2015/06/keystore-redesign-in-android-m.html)
+
 #KeyChain
 
 - "...application access to the system key store and allows users to grant application access to the credentials stored there."
