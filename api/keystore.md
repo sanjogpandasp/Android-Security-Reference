@@ -50,7 +50,8 @@ and
 	- [`.setEncryptionRequired()`](http://developer.android.com/reference/android/security/KeyPairGeneratorSpec.Builder.html#setEncryptionRequired())  
 	  - Requires a lock screen is set 
 	- `.setUserAuthenticationRequired(true)` 
-	   - User has to autheticate each use of the key (see below for more)	   - Optional 
+	   - User has to autheticate each use of the key (see below for more)	   
+	   - Optional `.setUserAuthenticationValidityDurationSeconds(AUTHENTICATION_DURATION_SECONDS)`
 	     - Previous key validations are valid for this amount of time 
 - OS access auth
   - Key access is tied to the apps UID
