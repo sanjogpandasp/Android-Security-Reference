@@ -6,9 +6,6 @@ and
  
 > Use the Android Keystore provider to let an individual app store its own credentials that only the app itself can access. This provides a way for apps to manage credentials that are usable only by itself while providing the same security benefits that the KeyChain API provides for system-wide credentials. This method requires no user interaction to select the credentials.
 
-- [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html) class
-- See [developer.android.com] [Android Keystore System](http://developer.android.com/training/articles/keystore.html) for Training.
-
 ##Version changes
 
 - **D-1.6-4**
@@ -120,6 +117,7 @@ CAs are also stored in the `KeyStore`. When added a custom CA device should prom
 
 ##Links
 
+- [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html) class
 - [developer.android.com] [Android Keystore System](http://developer.android.com/training/articles/keystore.html)
 - [Nikolay Elenkov] [Keystore redesign in Android M](https://nelenkov.blogspot.co.uk/2015/06/keystore-redesign-in-android-m.html)
 - Bugs / Vulns
