@@ -7,8 +7,14 @@ Added in M-6-23, AOSP now officially supports fingerprint hardware with an API a
 > User authentication authorizes a specific cryptographic operation associated with one key. In this mode, each 
 operation involving such a key must be individually authorized by the user. Currently, the only means of such authorization 
 is fingerprint authentication: FingerprintManager.authenticate. Such keys can only be generated or imported if at least one
-fingerprint is enrolled (see FingerprintManager.hasEnrolledFingerprints). These keys become permanently invalidated once a 
-new fingerprint is enrolled or all fingerprints are unenrolled.
+fingerprint is enrolled (see FingerprintManager.hasEnrolledFingerprints). **These keys become permanently invalidated once a 
+new fingerprint is enrolled or all fingerprints are unenrolled**.
+
+Losing Keys after new finger enrollment
+
+>The key will become irreversibly invalidated once the secure lock screen is disabled (reconfigured to None, Swipe or other mode which does not authenticate the user) or when the secure lock screen is forcibly reset (e.g., by a Device Administrator). Additionally, if the key requires that user authentication takes place for every use of the key, it is also irreversibly invalidated once a new fingerprint is enrolled or once\ no more fingerprints are enrolled. Attempts to initialize cryptographic operations using such keys will throw `KeyPermanentlyInvalidatedException`.
+
+Taken from [`setUserAuthenticationRequired()`](http://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setUserAuthenticationRequired(boolean)).
 
 ##API
 
