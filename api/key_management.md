@@ -16,7 +16,7 @@ and the `KeyChain`
     - This sample demonstrates how you can use device credentials (PIN, Pattern, Password) in your app to authenticate the user before they are trying to complete some actions
     - Will try to use key as part of crypto op after auth
 - Auth Via Fingerprint
-  - check (fingerprint.md)[fingerprint.md] for more 
+  - check [fingerprint.md](fingerprint.md) for more 
 
 ##Losing Keys
 
