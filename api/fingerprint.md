@@ -17,7 +17,7 @@ new fingerprint is enrolled or all fingerprints are unenrolled.
     - This sample demonstrates how you can use registered fingerprints to authenticate the user before proceeding some actions such as purchasing an item.
     - Will try to use key as part of crypto op after auth
     - Also lives in Githib as [googlesamples/android-FingerprintDialog](https://github.com/googlesamples/android-FingerprintDialog)
-- [`FingerPrintManager'](http://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html)
+- [`FingerPrintManager`](http://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html)
   - A class that coordinates access to the fingerprint hardware. 
     - Check if supported
     - Check if fingers enrolled
