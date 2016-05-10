@@ -16,22 +16,40 @@ new fingerprint is enrolled or all fingerprints are unenrolled.
   - [FingerPrintDialog](http://developer.android.com/samples/FingerprintDialog/src/com.example.android.fingerprintdialog/MainActivity.html) 
     - This sample demonstrates how you can use registered fingerprints to authenticate the user before proceeding some actions such as purchasing an item.
     - Will try to use key as part of crypto op after auth
+    - Also lives in Githib as [googlesamples/android-FingerprintDialog](https://github.com/googlesamples/android-FingerprintDialog)
 - [`FingerPrintManager'](http://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html)
   - A class that coordinates access to the fingerprint hardware. 
+    - Check if supported
+    - Check if fingers enrolled
+    - Requesting Auth 
   - [`FingerPrintManager.authenticate`](http://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#authenticate(android.hardware.fingerprint.FingerprintManager.CryptoObject, android.os.CancellationSignal, int, android.hardware.fingerprint.FingerprintManager.AuthenticationCallback, android.os.Handler))
     - Warms up the sensor and will make callback once fingerprint made 
     - Can show own dialog. Recommended to use official finger icon
     - Crypto keys should be valid during lifecycle of succesful callback
+- `USER_FINGERPRINT` permission needed
+	- [`normal`](http://developer.android.com/reference/android/Manifest.permission.html#USE_FINGERPRINT) level permission, therefore no need to request at runtime
 
 ##AOSP CTS Requirements
 
-To have google apps & services OEM devices must pass the CTS. This should mean that existing 3rd party fingerprint implementations will need to conform to the M api for fingerprint if they are to be upgraded to run M. _(confirmation needed)_.
-
+To have google apps & services OEM devices must pass the CTS. 
 [M-6-23 Compatability Doc](http://static.googleusercontent.com/media/source.android.com/en//compatibility/android-cdd.pdf)
 
 > MUST have a hardware-backed keystore implementation, and perform the fingerprint matching in a Trusted Execution Environment (TEE) or on a chip with a secure channel to the TEE.
 
 > MUST have a false acceptance rate not higher than 0.002%.
+
+##3rd party OEM APIs
+
+Some OEMs have introduced their own fingerprint API/hardware outside of the CTS running Android versions pre M-6-23. These include:
+
+- Samsung ('[Pass](http://developer.samsung.com/release-note/view.do?v=R000000009)' API availble to devs)
+- Oneplus (Properitary API not yet available as of Aug '15)
+- HTC 
+- ...
+
+Its unknown if each OEM will maintain their own API as well as AOSPs when running M-6-23+. Samsung [now supports both](http://www.androidcentral.com/galaxy-s7-and-s7-edge-support-both-marshmallow-and-samsung-fingerprint-apis).
+
+Some 3rd party (non-CTS?) implementations have been [shown to be vulnerable](http://www.engadget.com/2015/08/05/android-fingerprint-readers-may-be-easier-to-hack-than-touch-id/) however. 
 
 ##Risk of using Biometric?
 
@@ -47,3 +65,4 @@ Official link [Fingerprint security on Nexus devices](https://support.google.com
 
 - [Official] [New in Android Samples: Authenticating to remote servers using the Fingerprint API](http://android-developers.blogspot.co.uk/2015/10/new-in-android-samples-authenticating.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+blogspot/hsDu+(Android+Developers+Blog))
   - Talks about `.setUserAuthenticationRequired(true)` 
+- [Android: Fingerprint Authentication Thoughts](https://medium.com/@manuelvicnt/android-fingerprint-authentication-f8c7c76c50f8#.htn7xmypk)
