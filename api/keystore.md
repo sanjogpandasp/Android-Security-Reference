@@ -1,10 +1,11 @@
-#[KeyStore](http://developer.android.com/reference/java/security/KeyStore.html)
+#KeyStore
 
 > KeyStore is responsible for maintaining cryptographic keys and their owners.
  
 > Use the Android Keystore provider to let an individual app store its own credentials that only the app itself can access. This provides a way for apps to manage credentials that are usable only by itself while providing the same security benefits that the KeyChain API provides for system-wide credentials. This method requires no user interaction to select the credentials.
 
-See [developer.android.com] [Android Keystore System](http://developer.android.com/training/articles/keystore.html) for Training.
+- [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html) class
+- See [developer.android.com] [Android Keystore System](http://developer.android.com/training/articles/keystore.html) for Training.
 
 ##Version changes
 
