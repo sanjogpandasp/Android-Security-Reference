@@ -16,6 +16,12 @@ new fingerprint is enrolled or all fingerprints are unenrolled.
   - [FingerPrintDialog](http://developer.android.com/samples/FingerprintDialog/src/com.example.android.fingerprintdialog/MainActivity.html) 
     - This sample demonstrates how you can use registered fingerprints to authenticate the user before proceeding some actions such as purchasing an item.
     - Will try to use key as part of crypto op after auth
+- [`FingerPrintManager'](http://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html)
+  - A class that coordinates access to the fingerprint hardware. 
+  - [`FingerPrintManager.authenticate`](http://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html#authenticate(android.hardware.fingerprint.FingerprintManager.CryptoObject, android.os.CancellationSignal, int, android.hardware.fingerprint.FingerprintManager.AuthenticationCallback, android.os.Handler))
+    - Warms up the sensor and will make callback once fingerprint made 
+    - Can show own dialog. Recommended to use official finger icon
+    - Crypto keys should be valid during lifecycle of succesful callback
 
 ##AOSP CTS Requirements
 
