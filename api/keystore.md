@@ -6,6 +6,13 @@ and
  
 > Use the Android Keystore provider to let an individual app store its own credentials that only the app itself can access. This provides a way for apps to manage credentials that are usable only by itself while providing the same security benefits that the KeyChain API provides for system-wide credentials. This method requires no user interaction to select the credentials.
 
+##Related API
+
+- [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html)
+  - KeyStore is responsible for maintaining cryptographic keys and their owners.
+- [`KeyPair`](http://developer.android.com/reference/java/security/KeyPair.html)
+  - KeyPair is a container for a public key and a private key. Since the private key can be accessed, instances must be treated like a private key.
+
 ##Version changes
 
 - **D-1.6-4**
