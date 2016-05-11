@@ -13,6 +13,11 @@ and
 - Used with   
   - [`KeyPair`](http://developer.android.com/reference/java/security/KeyPair.html)
     - KeyPair is a container for a public key and a private key. 
+  - [`KeyPairGenerator`](http://developer.android.com/reference/java/security/KeyPairGenerator.html)
+    - KeyPairGenerator is an engine class which is capable of generating a private key and its related public key utilizing the algorithm it was initialized with. 
+  - [`KeyPairGeneratorSpec`](http://developer.android.com/reference/android/security/KeyPairGeneratorSpec.html)
+    - This provides the required parameters needed for initializing the KeyPairGenerator that works with Android KeyStore 
+    - This class was deprecated in API level 23. Use `KeyGenParameterSpec` instead.
   - [`Cipher`](http://developer.android.com/reference/javax/crypto/Cipher.html#init(int, java.security.Key))
     - `Cipher.init(...)` takes a [`Key`](http://developer.android.com/reference/java/security/Key.html), which if is the output of `KeyPair.getPrivate()`, where `KeyPair` is obtained from `KeyStore.getEntry(...)`, then allows `Cipher` operations to be performed with a key that lives in the hardware/software keystore (win!). 
       - This is true as long as the `Cipher` config in question is supported by the hardware (if present). 
