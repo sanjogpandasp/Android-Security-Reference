@@ -14,7 +14,9 @@ and
   - [`KeyPair`](http://developer.android.com/reference/java/security/KeyPair.html)
     - KeyPair is a container for a public key and a private key. 
   - [`Cipher`](http://developer.android.com/reference/javax/crypto/Cipher.html#init(int, java.security.Key))
-    - `Cipher.init(...)` takes a [`Key`](http://developer.android.com/reference/java/security/Key.html), which if is the output of `KeyPair.getPrivate()`, where `KeyPair` is obtained from `KeyStore.getEntry(...)`, then allows `Cipher` operations to be performed with a key that lives in the hardware/software keystore (win!)
+    - `Cipher.init(...)` takes a [`Key`](http://developer.android.com/reference/java/security/Key.html), which if is the output of `KeyPair.getPrivate()`, where `KeyPair` is obtained from `KeyStore.getEntry(...)`, then allows `Cipher` operations to be performed with a key that lives in the hardware/software keystore (win!). 
+      - This is true as long as the `Cipher` config in question is supported by the hardware (if present). 
+      - This list is found on the [Android Keystore System](http://developer.android.com/training/articles/keystore.html) page
 
 ##Version changes
 
