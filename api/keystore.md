@@ -132,6 +132,7 @@ CAs are also stored in the `KeyStore`. When added a custom CA device should prom
 
 - [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html) class
 - [developer.android.com] [Android Keystore System](http://developer.android.com/training/articles/keystore.html)
+  - Shows list of Ciphers (& more) supported by the `KeyStore` 
 - [Nikolay Elenkov] [Keystore redesign in Android M](https://nelenkov.blogspot.co.uk/2015/06/keystore-redesign-in-android-m.html)
 - Bugs / Vulns
   - [Android keystore key leakage between security domains](http://jbp.io/2014/04/07/android-keystore-leak/)
