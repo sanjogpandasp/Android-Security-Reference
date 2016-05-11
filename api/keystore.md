@@ -12,7 +12,7 @@ and
   - KeyStore is responsible for maintaining cryptographic keys and their owners.
 - Used with   
   - [`KeyPair`](http://developer.android.com/reference/java/security/KeyPair.html)
-    - KeyPair is a container for a public key and a private key. Since the private key can be accessed, instances must be treated like a private key.
+    - KeyPair is a container for a public key and a private key. 
   - [`Cipher`](http://developer.android.com/reference/javax/crypto/Cipher.html#init(int, java.security.Key))
     - `Cipher.init(...)` takes a [`Key`](http://developer.android.com/reference/java/security/Key.html), which if is the output of `KeyPair.getPrivate()`, where `KeyPair` is obtained from `KeyStore.getEntry(...)`, then allows `Cipher` operations to be performed with a key that lives in the hardware/software keystore (win!)
 
