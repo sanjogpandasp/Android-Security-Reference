@@ -19,6 +19,13 @@ and
   - [`KeyPairGeneratorSpec`](http://developer.android.com/reference/android/security/KeyPairGeneratorSpec.html)
     - This provides the required parameters needed for initializing the KeyPairGenerator that works with Android KeyStore 
     - **This class was deprecated in API level 23. Use `KeyGenParameterSpec` instead.**
+  - [`KeyGenerator`](https://developer.android.com/reference/javax/crypto/KeyGenerator.html)
+    - This class provides the public API for generating symmetric cryptographic keys.
+  - [`KeyGenParameterSpec`](https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.html)
+    - AlgorithmParameterSpec for initializing a KeyPairGenerator or a KeyGenerator of the Android Keystore system. 
+    - More control over what the key can be used for and when
+    - Since M-6-23
+    - Authentiaction required support (lock screen | finger per use)
   - [`Cipher`](http://developer.android.com/reference/javax/crypto/Cipher.html#init(int, java.security.Key))
     - `Cipher.init(...)` takes a [`Key`](http://developer.android.com/reference/java/security/Key.html), which if is the output of `KeyPair.getPrivate()`, where `KeyPair` is obtained from `KeyStore.getEntry(...)`, then allows `Cipher` operations to be performed with a key that lives in the hardware/software keystore (win!). 
       - This is true as long as the `Cipher` config in question is supported by the hardware (if present). 
