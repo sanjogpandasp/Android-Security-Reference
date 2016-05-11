@@ -15,6 +15,7 @@ and
     - KeyPair is a container for a public key and a private key. 
   - [`KeyPairGenerator`](http://developer.android.com/reference/java/security/KeyPairGenerator.html)
     - KeyPairGenerator is an engine class which is capable of generating a private key and its related public key utilizing the algorithm it was initialized with. 
+    - `KeyPairGenerator.getInstance(<cipherName>, "AndroidKeyStore");` for the key to be generated in the system keystore.
   - [`KeyPairGeneratorSpec`](http://developer.android.com/reference/android/security/KeyPairGeneratorSpec.html)
     - This provides the required parameters needed for initializing the KeyPairGenerator that works with Android KeyStore 
     - **This class was deprecated in API level 23. Use `KeyGenParameterSpec` instead.**
