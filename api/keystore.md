@@ -25,15 +25,11 @@ This is especially handy for any kind of challenge / response auth or other proc
 - [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html)
   - KeyStore is responsible for maintaining cryptographic keys and their owners.
 - Used with   
-  - [`KeyGenParameterSpec`](https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.html)
-    - `AlgorithmParameterSpec` for initializing a `KeyPairGenerator` or a `KeyGenerator` of the Android Keystore system. 
-    - **Since M-6-23**
-    - More control over what the key can be used for and when
-    - Supports authentication-required-before-use (lock screen | finger)
   - [`Cipher`](http://developer.android.com/reference/javax/crypto/Cipher.html#init(int, java.security.Key))
-    - `Cipher.init(...)` takes a [`Key`](http://developer.android.com/reference/java/security/Key.html), which if is the output of `KeyPair.getPrivate()`, where `KeyPair` is obtained from `KeyStore.getEntry(...)`, then allows `Cipher` operations to be performed with a key that lives in the hardware/software keystore (win!). 
-      - This is true as long as the `Cipher` config in question is supported by the hardware (if present). 
-      - This list is found on the [Android Keystore System](http://developer.android.com/training/articles/keystore.html) page
+    - `Cipher.init(...)` takes a [`Key`](http://developer.android.com/reference/java/security/Key.html) which can represent a key that lives in the `KeyStore`
+    - From **J-4.3-18** this can be the output of `KeyPair.getPrivate()`, where `KeyPair` is obtained from `KeyStore.getEntry(...)` e.g. RSA
+    - From **M-6-23** this can be the output of `KeyStore.getKey(..)` if the `Key` for the passes `alias` is a `SecretKey` e.g. AES
+    - `KeyStore` supported `Cipher` list is found on the [Android Keystore System](http://developer.android.com/training/articles/keystore.html) page
   - Symmetric     
 	  - [`Key`](http://developer.android.com/reference/java/security/Key.html)
 	    - Key is the common interface for all keys. 
@@ -51,7 +47,12 @@ This is especially handy for any kind of challenge / response auth or other proc
 	  - [`KeyPairGeneratorSpec`](http://developer.android.com/reference/android/security/KeyPairGeneratorSpec.html)
 	    - This provides the required parameters needed for initializing the KeyPairGenerator that works with Android KeyStore 
 	    - **This class was deprecated in API level 23. Use `KeyGenParameterSpec` instead.**
-
+  - Both
+    - [`KeyGenParameterSpec`](https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.html)
+      - `AlgorithmParameterSpec` for initializing a `KeyPairGenerator` or a `KeyGenerator` of the Android Keystore system. 
+      - **Since M-6-23**
+      - More control over what the key can be used for and when
+      - Supports authentication-required-before-use (lock screen | finger)
 
 ##Version changes
 
