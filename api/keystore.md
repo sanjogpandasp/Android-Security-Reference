@@ -41,7 +41,7 @@ This is especially handy for any kind of challenge / response auth or other proc
   - [`KeyGenerator`](https://developer.android.com/reference/javax/crypto/KeyGenerator.html)
     - This class provides the public API for generating symmetric cryptographic keys.
   - [`KeyGenParameterSpec`](https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.html)
-    - AlgorithmParameterSpec for initializing a `KeyPairGenerator` or a `KeyGenerator` of the Android Keystore system. 
+    - `AlgorithmParameterSpec` for initializing a `KeyPairGenerator` or a `KeyGenerator` of the Android Keystore system. 
     - **Since M-6-23**
     - More control over what the key can be used for and when
     - Authentiaction required support (lock screen | finger per use)
