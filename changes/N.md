@@ -25,6 +25,17 @@ supplied key
 
 [from](http://developer.android.com/preview/api-overview.html#network_security_config)
 
+## Direct Boot
+
+> Android N runs in a secure, Direct Boot mode when the device has been powered on but the user has not unlocked the device.
+
+Introduces
+
+- _Credential encrypted storage_, which is the default storage location and only available after the user has unlocked the device.
+- _Device encrypted storage_, which is a storage location available both during Direct Boot mode and after the user has unlocked the device.
+
+[from](http://developer.android.com/preview/features/direct-boot.html)
+
 ## Crypto security provider has been removed.  
 
 > You should only call to the Java Cryptography Extension (JCE) APIs with a provider listed if the provider is included in the code of the APK. Otherwise, your app needs to be able to handle the provider’s absence.
