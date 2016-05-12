@@ -6,6 +6,20 @@ and
  
 > Use the Android Keystore provider to let an individual app store its own credentials that only the app itself can access. This provides a way for apps to manage credentials that are usable only by itself while providing the same security benefits that the KeyChain API provides for system-wide credentials. This method requires no user interaction to select the credentials.
 
+##Why should I use it?
+
+If you need to utilise and persist a cryptographic key in your application you either need to:
+
+1. Request some input from the user (like a password) and either use this directly to derive a key or use it to encrypt a key which can then be persisted to disk
+2. Store the key securely so it cant 'easily' be snooped
+
+Some implementations may store a key inside shared prefs or raw on the filesystem, or worse, in the source code, which is a vulnerable approach to key management. 
+
+KeyStore allows a way to store a key in hardware (if available) or in software (as an encrypted blob based off the device lock key) making it much harder to lift keys.
+
+This is especially handy for any kind of challenge / response auth or other process where a compromise of the key itself would cause problems.
+
+
 ##Related API
 
 - [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html)
