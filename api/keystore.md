@@ -25,21 +25,6 @@ This is especially handy for any kind of challenge / response auth or other proc
 - [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html)
   - KeyStore is responsible for maintaining cryptographic keys and their owners.
 - Used with   
-  - [`Key`](http://developer.android.com/reference/java/security/Key.html)
-    - Key is the common interface for all keys. 
-    - `KeyStore.getEntry(..)` should return a `KeyStore.SecretKeyEntry`
-    - `KeyStore.getKey(..)` should return a `SecretKey`
-  - [`KeyPair`](http://developer.android.com/reference/java/security/KeyPair.html)
-    - KeyPair is a container for a public key and a private key. 
-    - `KeyStore.getEntry(..)` should return a `KeyStore.PrivateKeyEntry`
-  - [`KeyPairGenerator`](http://developer.android.com/reference/java/security/KeyPairGenerator.html)
-    - KeyPairGenerator is an engine class which is capable of generating a private key and its related public key utilizing the algorithm it was initialized with. 
-    - `KeyPairGenerator.getInstance(<cipherName>, "AndroidKeyStore");` for the key to be generated in the system keystore.
-  - [`KeyPairGeneratorSpec`](http://developer.android.com/reference/android/security/KeyPairGeneratorSpec.html)
-    - This provides the required parameters needed for initializing the KeyPairGenerator that works with Android KeyStore 
-    - **This class was deprecated in API level 23. Use `KeyGenParameterSpec` instead.**
-  - [`KeyGenerator`](https://developer.android.com/reference/javax/crypto/KeyGenerator.html)
-    - This class provides the public API for generating symmetric cryptographic keys.
   - [`KeyGenParameterSpec`](https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.html)
     - `AlgorithmParameterSpec` for initializing a `KeyPairGenerator` or a `KeyGenerator` of the Android Keystore system. 
     - **Since M-6-23**
@@ -49,6 +34,24 @@ This is especially handy for any kind of challenge / response auth or other proc
     - `Cipher.init(...)` takes a [`Key`](http://developer.android.com/reference/java/security/Key.html), which if is the output of `KeyPair.getPrivate()`, where `KeyPair` is obtained from `KeyStore.getEntry(...)`, then allows `Cipher` operations to be performed with a key that lives in the hardware/software keystore (win!). 
       - This is true as long as the `Cipher` config in question is supported by the hardware (if present). 
       - This list is found on the [Android Keystore System](http://developer.android.com/training/articles/keystore.html) page
+  - Symmetric     
+	  - [`Key`](http://developer.android.com/reference/java/security/Key.html)
+	    - Key is the common interface for all keys. 
+	    - `KeyStore.getEntry(..)` should return a `KeyStore.SecretKeyEntry`
+	    - `KeyStore.getKey(..)` should return a `SecretKey`
+	  - [`KeyGenerator`](https://developer.android.com/reference/javax/crypto/KeyGenerator.html)
+    	- This class provides the public API for generating symmetric cryptographic keys. 
+  - Asymmetric
+	  - [`KeyPair`](http://developer.android.com/reference/java/security/KeyPair.html)
+	    - KeyPair is a container for a public key and a private key. 
+	    - `KeyStore.getEntry(..)` should return a `KeyStore.PrivateKeyEntry`
+	  - [`KeyPairGenerator`](http://developer.android.com/reference/java/security/KeyPairGenerator.html)
+	    - KeyPairGenerator is an engine class which is capable of generating a private key and its related public key utilizing the algorithm it was initialized with. 
+	    - `KeyPairGenerator.getInstance(<cipherName>, "AndroidKeyStore");` for the key to be generated in the system keystore.
+	  - [`KeyPairGeneratorSpec`](http://developer.android.com/reference/android/security/KeyPairGeneratorSpec.html)
+	    - This provides the required parameters needed for initializing the KeyPairGenerator that works with Android KeyStore 
+	    - **This class was deprecated in API level 23. Use `KeyGenParameterSpec` instead.**
+
 
 ##Version changes
 
