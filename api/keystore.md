@@ -25,8 +25,13 @@ This is especially handy for any kind of challenge / response auth or other proc
 - [`KeyStore`](http://developer.android.com/reference/java/security/KeyStore.html)
   - KeyStore is responsible for maintaining cryptographic keys and their owners.
 - Used with   
+  - [`Key`](http://developer.android.com/reference/java/security/Key.html)
+    - Key is the common interface for all keys. 
+    - `KeyStore.getEntry(..)` should return a `KeyStore.SecretKeyEntry`
+    - `KeyStore.getKey(..)` should return a `SecretKey`
   - [`KeyPair`](http://developer.android.com/reference/java/security/KeyPair.html)
     - KeyPair is a container for a public key and a private key. 
+    - `KeyStore.getEntry(..)` should return a `KeyStore.PrivateKeyEntry`
   - [`KeyPairGenerator`](http://developer.android.com/reference/java/security/KeyPairGenerator.html)
     - KeyPairGenerator is an engine class which is capable of generating a private key and its related public key utilizing the algorithm it was initialized with. 
     - `KeyPairGenerator.getInstance(<cipherName>, "AndroidKeyStore");` for the key to be generated in the system keystore.
