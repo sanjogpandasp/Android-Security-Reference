@@ -75,5 +75,8 @@ Official link [Fingerprint security on Nexus devices](https://support.google.com
 - [Official] [New in Android Samples: Authenticating to remote servers using the Fingerprint API](http://android-developers.blogspot.co.uk/2015/10/new-in-android-samples-authenticating.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+blogspot/hsDu+(Android+Developers+Blog))
   - Talks about `.setUserAuthenticationRequired(true)` 
 - [Android: Fingerprint Authentication Thoughts](https://medium.com/@manuelvicnt/android-fingerprint-authentication-f8c7c76c50f8#.htn7xmypk)
+
+##Libs 
+
 - [square/Whorlwind](https://github.com/square/whorlwind)
   - A reactive wrapper around Android's fingerprint API that handles encrypting/decrypting sensitive data using a fingerprint.
