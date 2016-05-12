@@ -30,13 +30,14 @@ This is especially handy for any kind of challenge / response auth or other proc
     - From **J-4.3-18** this can be the output of `KeyPair.getPrivate()`, where `KeyPair` is obtained from `KeyStore.getEntry(...)` e.g. RSA
     - From **M-6-23** this can be the output of `KeyStore.getKey(..)` if the `Key` for the passes `alias` is a `SecretKey` e.g. AES
     - `KeyStore` supported `Cipher` list is found on the [Android Keystore System](http://developer.android.com/training/articles/keystore.html) page
-  - Symmetric     
-	  - [`Key`](http://developer.android.com/reference/java/security/Key.html)
-	    - Key is the common interface for all keys. 
-	    - `KeyStore.getEntry(..)` should return a `KeyStore.SecretKeyEntry`
-	    - `KeyStore.getKey(..)` should return a `SecretKey`
-	  - [`KeyGenerator`](https://developer.android.com/reference/javax/crypto/KeyGenerator.html)
-    	- This class provides the public API for generating symmetric cryptographic keys. 
+  - [`Key`](http://developer.android.com/reference/java/security/Key.html)
+	    - Key is the common interface for all keys.  
+  - Symmetric   
+    - [`SecretKey`](http://developer.android.com/reference/javax/crypto/SecretKey.html) 
+      - `KeyStore.getEntry(alias)` should return a `KeyStore.SecretKeyEntry` if `alias` represents an AES key
+      - `KeyStore.getKey(alias)` should return a `SecretKey` if `alias` represents an AES key
+    - [`KeyGenerator`](https://developer.android.com/reference/javax/crypto/KeyGenerator.html)
+      - This class provides the public API for generating symmetric cryptographic keys. 
   - Asymmetric
 	  - [`KeyPair`](http://developer.android.com/reference/java/security/KeyPair.html)
 	    - KeyPair is a container for a public key and a private key. 
