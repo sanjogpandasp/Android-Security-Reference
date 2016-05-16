@@ -131,7 +131,7 @@ You can also lose Keys that require fingerprint auth when a new finger is enroll
 
 I have not encountered this myself but there are anecdontal reports of keystores becoming locked even when `setEncryptionRequired` == false. See [this SO post](http://stackoverflow.com/a/25790891/236743).
 
-##Hardware vs Software
+##Hardware vs Software & CTS
 
 Some devices have hardware backed keystore storage, which was introduced in 4.3 but not manditory (Nexus devices since Nexus 4 have had this afaik). If a [CTS](http://static.googleusercontent.com/media/source.android.com/en//compatibility/android-cdd.pdf) compatable fingerprint functionality is available then
 
