@@ -42,10 +42,11 @@ Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technet
 - Was the default security Java Security API provider
 - Package was renamed at 3.0. Before this issues if including a newer version of BC (hence [SC](https://rtyley.github.io/spongycastle/))
 - Offered full JCE functionality
+- Unsure how much (if any) functionality delegated to native (i.e. [Open|Boring]Ssl) implementation. Should look at the CSPRNG...
 
 ####SpongyCastle
 
-- Many people import this so can use latest BC. 
+- Many people import this so can use latest BC, pretty much a jarjarlinks rename so no namespace clashes with BC. 
 - If going to use best not to make default but still set staically so can use with direct sepcifier throughout app
 
 ####None?
