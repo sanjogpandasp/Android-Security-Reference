@@ -46,7 +46,7 @@ This is especially handy for any kind of challenge / response auth or other proc
 	    - KeyPairGenerator is an engine class which is capable of generating a private key and its related public key utilizing the algorithm it was initialized with. 
 	    - `KeyPairGenerator.getInstance(<cipherName>, "AndroidKeyStore");` for the key to be generated in the system keystore.
 	  - [`KeyPairGeneratorSpec`](http://developer.android.com/reference/android/security/KeyPairGeneratorSpec.html)
-	    - This provides the required parameters needed for initializing the KeyPairGenerator that works with Android KeyStore 
+	    - This provides the required parameters needed for initializing the KeyPairGenerator that works with Android `KeyStore`. The spec determines authorized uses of the key, such as whether user authentication is required for using the key, what operations are authorized, with what parameters, and the key's validity start and end dates
 	    - **This class was deprecated in API level 23. Use `KeyGenParameterSpec` instead.**
   - Both
     - [`KeyGenParameterSpec`](https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.html)
