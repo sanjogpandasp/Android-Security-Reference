@@ -50,3 +50,7 @@ Introduces
 The above is not entirely correct as `Cipher` is backed by the sec provider, i.e. not only `SecureRandom`
 
 This was originally copied from [the N release notes](http://developer.android.com/preview/behavior-changes.html#open-jdk) but has since been removed. It was found under the heading _Platform Migration toward OpenJDK 8_.
+
+##Other
+
+- [`seccomp`](https://en.wikipedia.org/wiki/Seccomp) api now available nativly. See [IO16 talk](https://youtu.be/XZzLjllizYs?list=PLWz5rJ2EKKc8jQTUYvIfqA9lMvSGQWtte&t=2622) for more.
