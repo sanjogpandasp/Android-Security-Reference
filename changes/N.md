@@ -19,6 +19,7 @@ supplied key
 
 [from](http://developer.android.com/preview/api-overview.html#network_security_config) 
 
+- `<network-security-config>`
 - Custom trust achors 
   - can be specified for debug use only
   - trust root for domain(s) (so no need to purchase a cert)
