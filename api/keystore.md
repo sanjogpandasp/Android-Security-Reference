@@ -90,6 +90,7 @@ This is especially handy for any kind of challenge / response auth or other proc
 - **N-7?-24?**
   - Key Attestion
     - Can prove to 3rd partys that a hardware keystore exists with certain keys by signing a representation using a factory supplied key 
+  - Hardware KeyStore manditory [IO link](https://youtu.be/XZzLjllizYs?t=571) 
 
 ##Authenticating Key Use
 
@@ -137,7 +138,7 @@ Some devices have hardware backed keystore storage, which was introduced in 4.3 
 
 > MUST have a hardware-backed keystore implementation, and perform the fingerprint matching in a Trusted Execution Environment (TEE) or on a chip with a secure channel to the TEE.
 
-As of M-6-23 hardware backed keystore is not a requirement, but this may soon change:
+As of M-6-23 hardware backed keystore is not a requirement, but is [now manditory in N](https://youtu.be/XZzLjllizYs?t=571).
 
 > Note that while the above TEE-related requirements are stated as STRONGLY RECOMMENDED, the
 Compatibility Definition for the next API version is planned to changed these to REQIUIRED. If a
