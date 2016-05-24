@@ -53,4 +53,6 @@ This was originally copied from [the N release notes](http://developer.android.c
 
 ##Other
 
-- [`seccomp`](https://en.wikipedia.org/wiki/Seccomp) api now available nativly. See [IO16 talk](https://youtu.be/XZzLjllizYs?list=PLWz5rJ2EKKc8jQTUYvIfqA9lMvSGQWtte&t=2622) for more.
+- [`seccomp`](https://en.wikipedia.org/wiki/Seccomp) api now available nativly. 
+  - See [IO16 talk](https://youtu.be/XZzLjllizYs?list=PLWz5rJ2EKKc8jQTUYvIfqA9lMvSGQWtte&t=2622) for more.
+  - Can be used to restrict process operations 
