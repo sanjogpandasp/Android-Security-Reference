@@ -12,6 +12,8 @@ The crypto side of java has a few abbreviations associated with it, here are the
 - **JCE** [Java Cryptography Extension](https://en.wikipedia.org/wiki/Java_Cryptography_Extension)
   - The Java Cryptography Extension (JCE) is an officially released Standard Extension to the Java Platform and part of Java Cryptography Architecture.  
   - "The basic difference between JCA and JCE is that JCE is an extension of JCA" [SO post](http://stackoverflow.com/a/32755954/236743)
+  - The JCE framework places its classes in a different package, `javax.crypto`
+  - Now they are both (JCA & JCE) shipped with Java SE and this division is not so obvious or important 
 - **SPI** [Service Provider Interface](https://en.wikipedia.org/wiki/Service_provider_interface)
   - Service Provider Interface (SPI) is an API intended to be implemented or extended by a third party. It can be used to enable framework extension and replaceable components. 
 
