@@ -2,6 +2,18 @@
 
 Security functionality on Android is provided by various open src libs which vary depending on the OS version. There are native libs and java libs with JCE interfaces which coexist. 
 
+##Quick Overview to terms
+
+The crypto side of java has a few abbreviations associated with it, here are the most common ones:
+
+- **JCA** [Java Cryptography Architecture](https://en.wikipedia.org/wiki/Java_Cryptography_Architecture)
+  - The Java Cryptography Architecture (JCA) is a framework for working with cryptography using the Java programming language
+  - The JCA uses a "provider"-based architecture (see below)
+- **JCE** [Java Cryptography Extension](https://en.wikipedia.org/wiki/Java_Cryptography_Extension)
+  - The Java Cryptography Extension (JCE) is an officially released Standard Extension to the Java Platform and part of Java Cryptography Architecture.  
+- **SPI** [Service Provider Interface](https://en.wikipedia.org/wiki/Service_provider_interface)
+  - Service Provider Interface (SPI) is an API intended to be implemented or extended by a third party. It can be used to enable framework extension and replaceable components. 
+
 Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technetwork/java/javase/tech/index-jsp-136007.html).
 
 ##Native Implementations
