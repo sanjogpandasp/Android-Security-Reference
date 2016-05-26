@@ -54,6 +54,12 @@ Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technet
 	  - Java bridge between the crypto SPI and the native [Open|Boring]SSL implementation  
 	- [`NativeCrypto`](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/NativeCrypto.java) JNI bridge 
 	- [`NativeCryptoJni`](https://android.googlesource.com/platform/external/conscrypt/+/a6cef49/src/compat/java/org/conscrypt/NativeCryptoJni.java)
+	- Example flow
+	  - Create a new [`Cipher`](https://android.googlesource.com/platform/libcore/+/d416195/luni/src/main/java/javax/crypto/Cipher.java#172) instance using `RSA/ECB/PKCS1Padding` 
+	  - This internally will grab the SPI implementation that can handle this "transformation"
+	  - We can see the AndroidOpenSSL provider is registered to handle this [here](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLProvider.java#213) and has registered `OpenSSLCipherRSA$PKCS1` to handle this
+	  - This class is defined [here](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLCipherRSA.java#46) and conforms to the `CipherSpi` class,  
+	  - 
 - Was part of `libcore` until 4.4 
 
 ####BouncyCastle
