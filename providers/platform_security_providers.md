@@ -54,13 +54,13 @@ Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technet
 	  - Java bridge between the crypto SPI and the native [Open|Boring]SSL implementation  
 	- [`NativeCrypto`](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/NativeCrypto.java) JNI bridge 
 	- [`NativeCryptoJni`](https://android.googlesource.com/platform/external/conscrypt/+/a6cef49/src/compat/java/org/conscrypt/NativeCryptoJni.java)
-	- Example flow through this JCE SPI implementation for a `Cipher` operation
-	  - Create a new [`Cipher`](https://android.googlesource.com/platform/libcore/+/d416195/luni/src/main/java/javax/crypto/Cipher.java#172) instance using `RSA/ECB/PKCS1Padding` 
-	  - This internally will grab the SPI implementation that can handle this "transformation"
-	  - [We can see](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLProvider.java#212) the AndroidOpenSSL provider has registered to handle this with `OpenSSLCipherRSA$PKCS1`
-	  - [`OpenSSLCipherRSA`](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLCipherRSA.java#46) conforms to the `CipherSpi` class, which [backs](https://android.googlesource.com/platform/libcore/+/d416195/luni/src/main/java/javax/crypto/Cipher.java#119) `Cipher`
-	  - Calling something like `Cipher.doFinal` [internally](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLCipherRSA.java#265) calls `NativeCrypto.RSA_private_encrypt` which is a [JNI method](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/NativeCrypto.java#121)
-	  - This calls through a loaded `.so` lib (not included in AOSP or BoringSSL repos afaik) to [rsa.c](https://boringssl.googlesource.com/boringssl/+/master/crypto/rsa/rsa.c#222). This internally calls through to the loaded `struct RSA` (`rsa->meth->decrypt`) and will perform the op based upon the structs config. 
+- Example flow through this JCE SPI implementation for a `Cipher` operation
+  - Create a new [`Cipher`](https://android.googlesource.com/platform/libcore/+/d416195/luni/src/main/java/javax/crypto/Cipher.java#172) instance using `RSA/ECB/PKCS1Padding` 
+  - This internally will grab the SPI implementation that can handle this "transformation"
+  - [We can see](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLProvider.java#212) the AndroidOpenSSL provider has registered to handle this with `OpenSSLCipherRSA$PKCS1`
+  - [`OpenSSLCipherRSA`](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLCipherRSA.java#46) conforms to the `CipherSpi` class, which [backs](https://android.googlesource.com/platform/libcore/+/d416195/luni/src/main/java/javax/crypto/Cipher.java#119) `Cipher`
+  - Calling something like `Cipher.doFinal` [internally](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLCipherRSA.java#265) calls `NativeCrypto.RSA_private_encrypt` which is a [JNI method](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/NativeCrypto.java#121)
+  - This calls through a loaded `.so` lib (not included in AOSP or BoringSSL repos afaik) to [rsa.c](https://boringssl.googlesource.com/boringssl/+/master/crypto/rsa/rsa.c#222). This internally calls through to the loaded `struct RSA` (`rsa->meth->decrypt`) and will perform the op based upon the structs config. 
 - Was part of `libcore` until 4.4 
 
 ####BouncyCastle
