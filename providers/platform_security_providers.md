@@ -60,6 +60,7 @@ Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technet
 	  - We can see the AndroidOpenSSL provider is registered to handle this [here](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLProvider.java#213) and has registered `OpenSSLCipherRSA$PKCS1` to handle this
 	  - This class is defined [here](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLCipherRSA.java#46) and conforms to the `CipherSpi` class, which [backs](https://android.googlesource.com/platform/libcore/+/d416195/luni/src/main/java/javax/crypto/Cipher.java#119) `Cipher`
 	  - Calling something like `Cipher.doFinal` [internally](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLCipherRSA.java#265) calls `NativeCrypto.RSA_private_encrypt` which is a [JNI](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/NativeCrypto.java#121) method
+	  - This calls through a loaded `so` lib (not included in AOSP or BoringSSL repos afaik) to [rsa.c](https://boringssl.googlesource.com/boringssl/+/master/crypto/rsa/rsa.c#222). This internally calls through to the loaded `struct RSA` (`rsa->meth->decrypt`) and will perform the op based upon the structs config. 
 - Was part of `libcore` until 4.4 
 
 ####BouncyCastle
