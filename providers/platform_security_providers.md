@@ -47,7 +47,7 @@ Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technet
 	- AndroidOpenSSL's [`Provider` def](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLProvider.java#34) @ N preview v2
 	  - Maps crypto def Strings to class definitions which conform to the SPI for that function 
 	- AndroidOpenSSL's [SPI concrete class definitions](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt)  @ N preview v2
-	  - Java bridge between the crypto SPI and the native *SSL implementation  
+	  - Java bridge between the crypto SPI and the native [Open|Boring]SSL implementation  
 - Was part of `libcore` until 4.4 
 
 ####BouncyCastle
