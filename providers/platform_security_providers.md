@@ -28,7 +28,8 @@ Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technet
 	
 ####BoringSSL
 
-- [Source link](https://boringssl.googlesource.com/boringssl/)		
+- [Source link](https://boringssl.googlesource.com/boringssl/)	
+  - Has build instructions 
 - "BoringSSL is a fork of OpenSSL that is designed to meet Google’s needs."
 - Transition starting in 6.0
 
