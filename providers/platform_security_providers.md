@@ -52,6 +52,7 @@ Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technet
 	- AndroidOpenSSL's [SPI concrete class definitions](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt)  @ N preview v2
 	  - Java bridge between the crypto SPI and the native [Open|Boring]SSL implementation  
 	- [`NativeCrypto`](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/NativeCrypto.java) JNI bridge 
+	- [`NativeCryptoJni`](https://android.googlesource.com/platform/external/conscrypt/+/a6cef49/src/compat/java/org/conscrypt/NativeCryptoJni.java)
 - Was part of `libcore` until 4.4 
 
 ####BouncyCastle
