@@ -58,8 +58,8 @@ Guide to terms like JCE & JSSE can be found [here](http://www.oracle.com/technet
 	  - Create a new [`Cipher`](https://android.googlesource.com/platform/libcore/+/d416195/luni/src/main/java/javax/crypto/Cipher.java#172) instance using `RSA/ECB/PKCS1Padding` 
 	  - This internally will grab the SPI implementation that can handle this "transformation"
 	  - We can see the AndroidOpenSSL provider is registered to handle this [here](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLProvider.java#213) and has registered `OpenSSLCipherRSA$PKCS1` to handle this
-	  - This class is defined [here](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLCipherRSA.java#46) and conforms to the `CipherSpi` class,  
-	  - 
+	  - This class is defined [here](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLCipherRSA.java#46) and conforms to the `CipherSpi` class, which [backs](https://android.googlesource.com/platform/libcore/+/d416195/luni/src/main/java/javax/crypto/Cipher.java#119) `Cipher`
+	  - Calling something like `Cipher.doFinal` [internally](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/OpenSSLCipherRSA.java#265) calls `NativeCrypto.RSA_private_encrypt` which is a [JNI](https://android.googlesource.com/platform/external/conscrypt/+/android-n-preview-2/src/main/java/org/conscrypt/NativeCrypto.java#121) method
 - Was part of `libcore` until 4.4 
 
 ####BouncyCastle
