@@ -3,8 +3,9 @@
 ##Dev Docs
 
 - [developer.android.com] [Best Practices for Security & Privacy](http://developer.android.com/training/best-security.html)
+  - A pragmatic guide to working with Android security
 - [source.android.com] [Security](https://source.android.com/security/index.html)
-  - Covers various areas of Android security info and updates
+  - Covers various areas of Android OS security info and updates
 
 ##Compatability Docs
 
