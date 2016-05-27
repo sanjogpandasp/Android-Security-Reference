@@ -1,1 +1,1 @@
-See [/api/fingerprint](/api/fingerprint)
+See [/api/fingerprint.md](/api/fingerprint.md)
