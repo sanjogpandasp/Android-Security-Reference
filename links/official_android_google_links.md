@@ -4,6 +4,7 @@
 
 - [developer.android.com] [Best Practices for Security & Privacy](http://developer.android.com/training/best-security.html)
 - [source.android.com] [Security](https://source.android.com/security/index.html)
+  - Covers various areas of Android security info and updates
 
 ##Compatability Docs
 
