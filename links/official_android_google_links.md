@@ -9,6 +9,7 @@
 
 ##Compatability Docs
 
+- [source.android.com] [Android 6.0 Compatibility Definition Document:9. Security Model Compatibility](https://source.android.com/compatibility/android-cdd.html#9_security_model_compatibility)
 - [static.googleusercontent.com] [6.0 Compatability Doc](http://static.googleusercontent.com/media/source.android.com/en//compatibility/android-cdd.pdf)
   - See section **9. Security Model Compatibility**
 
