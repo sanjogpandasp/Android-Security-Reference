@@ -19,7 +19,9 @@ Added in M-6-23, AOSP now officially supports fingerprint hardware with an API a
     - Can show own dialog. Recommended to use official finger icon
     - Crypto keys should be valid during lifecycle of succesful callback
 - [`KeyGenParameterSpec.Builder.setUserAuthenticationRequired(boolean)`](http://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setUserAuthenticationRequired(boolean))
-	- ...if the key requires that user authentication takes place for every use of the key (see [`setUserAuthenticationValidityDurationSeconds(int)`](https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setUserAuthenticationValidityDurationSeconds(int))), at least one fingerprint must be enrolled (see `hasEnrolledFingerprints()`)
+	- "By default, if user authentication is required, it must take place for every use of the key."
+	- ...if the key requires that user authentication takes place for every use of the key at least one fingerprint must be enrolled (can use `hasEnrolledFingerprints()`)
+	- [`setUserAuthenticationValidityDurationSeconds(int)`](https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setUserAuthenticationValidityDurationSeconds(int) can be used to extend the validity period and therefore also allows the lock screen to be used to auth on demand 
 - `USER_FINGERPRINT` permission needed
 	- [`normal`](http://developer.android.com/reference/android/Manifest.permission.html#USE_FINGERPRINT) level permission, therefore no need to request at runtime
 
